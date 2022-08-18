@@ -2,6 +2,7 @@
 @import "header";
 
 .contact button {
+  @include flexCenter(column,green);
   background-color: $button-color;
 }
 
