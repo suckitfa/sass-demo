@@ -1,4 +1,6 @@
 # Sass入门
+- 安装vscode extension: Live Sass Compiler
+- Live Server
 ### 核心概念
 - variables 变量
 - maps
