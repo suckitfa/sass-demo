@@ -1,6 +1,6 @@
 # Sass入门
-- 安装vscode extension: Live Sass Compiler
-- Live Server
+- 安装vscode extension: Live Sass Compiler,实时编译Sass文件
+- Live Server 能够实时监测文件内容变化
 ### 核心概念
 - variables 变量
 - maps
