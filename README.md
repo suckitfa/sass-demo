@@ -1,4 +1,5 @@
 # Sass入门
+- sass是css的预处理器，能够更加强大的支持CSS。浏览器只能够识别解析CSS，最终Sass需要编译成CSS。
 - 安装vscode extension: Live Sass Compiler,实时编译Sass文件
 - Live Server 能够实时监测文件内容变化
 ### 核心概念
@@ -12,3 +13,25 @@
 - 实战教学 构建一个 Portfolio Site
 
 ### variables 变量
+**css的变量**
+
+```css
+:root {
+  --primary-color:#272727;
+  --accent-color:#ff652f;
+  --text-color:#fff;
+}
+body {
+  background:var(--primary-color);
+}
+```
+**scss变量：编译后直接用对应的值来替换，100%兼容**
+
+```scss
+$primary-color:#272727;
+$accent-color:#ff652f;
+$text-color:#fff;
+body {
+  background:primary-color;
+}
+```
