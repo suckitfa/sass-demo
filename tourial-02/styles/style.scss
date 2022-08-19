@@ -8,3 +8,14 @@ body {
   background-color: green;
   font-weight: map-get($map: $font-weights, $key:regular);  
 }
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  #{&}__paragraph {
+    font-weight: map-get($map: $font-weights, $key:bold );
+    &:hover {
+      background-color: aliceblue;
+    }
+  }
+}

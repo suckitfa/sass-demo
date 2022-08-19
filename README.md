@@ -50,3 +50,7 @@ body {
   background:$map-get($font-weights,bold);
 }
 ```
+
+![image-20220819090711274](.\tourial-02\public\image-20220819090711274.png)
+
+### & 相当于父选择器
