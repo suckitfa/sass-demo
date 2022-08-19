@@ -76,6 +76,9 @@ scss代码分散到多个文件，文件命名以一个`中横线`开头,如 `-r
 ![image-20220819092300066](.\tourial-02\public\image-20220819092300066.png)
 
 ### functions
+
+用来计算值和返回值
+
 ```scss
 // 定义好的maps
 $font-weights(
@@ -91,5 +94,18 @@ $font-weights(
 // 使用行数
 body {
   font-weight:weight(bold);
+}
+```
+
+### mixin & include
+
+定义样式
+
+```scss
+// 定义mixin
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
