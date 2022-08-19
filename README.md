@@ -74,3 +74,22 @@ body {
 scss代码分散到多个文件，文件命名以一个`中横线`开头,如 `-reset.scss`, 让后在文件中引入`@import "reset"`
 
 ![image-20220819092300066](.\tourial-02\public\image-20220819092300066.png)
+
+### functions
+```scss
+// 定义好的maps
+$font-weights(
+  "regular":400,
+  "medium":500,
+  "bold":800
+)
+// 定义函数 $weight-name为函数的参数
+@function weight($weight-name) {
+  @return map-get($font-weights,$weight-name);
+}
+
+// 使用行数
+body {
+  font-weight:weight(bold);
+}
+```
