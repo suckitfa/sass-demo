@@ -54,3 +54,17 @@ body {
 ![image-20220819090711274](.\tourial-02\public\image-20220819090711274.png)
 
 ### & 相当于父选择器
+### nesting规则嵌套
+- 根据元素的规则嵌套
+```scss
+.main {
+  width: 80%;
+  margin: 0 auto;
+  #{&}__paragraph {
+    font-weight: map-get($map: $font-weights, $key:bold );
+    &:hover {
+      background-color: aliceblue;
+    }
+  }
+}
+```
