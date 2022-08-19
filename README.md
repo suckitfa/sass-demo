@@ -35,3 +35,18 @@ body {
   background:primary-color;
 }
 ```
+
+### maps
+```scss
+// 定义一个maps
+$font-weights(
+  "regular":400,
+  "medium":500,
+  "bold":800
+)
+
+// 使用maps $map-get($map,$key)
+body {
+  background:$map-get($font-weights,bold);
+}
+```
