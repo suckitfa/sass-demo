@@ -18,9 +18,14 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.main__paragraph {
+.main .main__paragraph1 {
   font-weight: 700;
 }
-.main__paragraph:hover {
-  background-color: yellow;
+.main .main__paragraph1:hover {
+  color: pink;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

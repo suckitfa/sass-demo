@@ -20,6 +20,12 @@
   }
 }
 
+@mixin mobile {
+  @media (max-width:$mobile) {
+    @content;
+  }
+}
+
 body {
   font-weight: map-get($map: $font-weights, $key:regular);
   background:$primary-color;
@@ -30,12 +36,20 @@ body {
   @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
-  &__paragraph {
+  #{&}__paragraph1 {
     // font-weight: map-get($map: $font-weights, $key:bold );
     font-weight: weight(bold);
     &:hover {
-      background-color: yellow;
+      color:pink;
     }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__parapraph1;
+  }
+  
+  @include mobile {
+    flex-direction: column;
   }
 }
 
