@@ -18,10 +18,10 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.main .main__paragraph1 {
+.main .main__paragraph1, .main .main__paragraph2 {
   font-weight: 700;
 }
-.main .main__paragraph1:hover {
+.main .main__paragraph1:hover, .main .main__paragraph2:hover {
   color: pink;
 }
 @media (max-width: 800px) {
