@@ -109,3 +109,28 @@ body {
   align-items: center;
 }
 ```
+
+### extend继承样式
+```scss
+.main {
+  @include flexCenter(row);
+  // width: 80%;
+  width: calc(80% - 400px);
+  margin: 0 auto;
+  #{&}__paragraph1 {
+    // font-weight: map-get($map: $font-weights, $key:bold );
+    font-weight: weight(bold);
+    &:hover {
+      color:pink;
+    }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+  }
+  
+  @include mobile {
+    flex-direction: column;
+  }
+}
+```
