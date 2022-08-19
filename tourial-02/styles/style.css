@@ -10,10 +10,6 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
@@ -22,9 +18,4 @@ body {
 }
 .main__paragraph:hover {
   background-color: yellow;
-}
-
-.light {
-  background: white;
-  color: black;
 }/*# sourceMappingURL=style.css.map */
