@@ -12,8 +12,18 @@
   flex-direction: $direction;
 }
 
+// 模式切换
+@mixin theme($light-theme:true) {
+  @if $light-theme  {
+    background:lighten($primary-color,100%);
+    color:darken($text-color, 100%);
+  }
+}
+
 body {
-  font-weight: map-get($map: $font-weights, $key:regular);  
+  font-weight: map-get($map: $font-weights, $key:regular);
+  background:$primary-color;
+  color: $text-color;
 }
 
 .main {
@@ -30,6 +40,5 @@ body {
 }
 
 .light {
-
-
+  @include theme($light-theme:false);
 }
