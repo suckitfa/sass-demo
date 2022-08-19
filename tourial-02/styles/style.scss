@@ -1,8 +1,5 @@
-$font-weights: (
-  "regular":400,
-  "medium":500,
-  "bold":700
-);
+@import "reset";
+@import "variables";
 
 body {
   background-color: green;

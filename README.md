@@ -6,7 +6,7 @@
 - variables 变量
 - maps
 - nesting 规则的嵌套
-- partials & includes
+- partials & import 份文件组织scss代码
 - functions
 - extend
 - Math operation 数学操作
@@ -68,3 +68,9 @@ body {
   }
 }
 ```
+
+### partials & import
+
+scss代码分散到多个文件，文件命名以一个`中横线`开头,如 `-reset.scss`, 让后在文件中引入`@import "reset"`
+
+![image-20220819092300066](.\tourial-02\public\image-20220819092300066.png)
