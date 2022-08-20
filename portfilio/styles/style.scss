@@ -1,7 +1,7 @@
 @import "config";
 @import "home";
 @import "menu";
-
+@import "about";
 body {
   background: $primary-color;
   color:set-text-color($primary-color);
@@ -14,9 +14,17 @@ h1,h2,h3 {
   font-weight: 400;
 }
 
+.text-secondary {
+  color: $secondary-color;
+}
+
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-sencondary {
+  color: $secondary-color;
 }
 
 header {
