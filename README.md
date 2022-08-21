@@ -134,3 +134,16 @@ body {
   }
 }
 ```
+
+### 简历网页实战--Portfolio
+- home
+- about
+- project
+- contact
+使用的主要布局技术
+- 定位
+- grid
+- flex
+- transform 移动元素
+动画效果
+- transition-ease-in-out
